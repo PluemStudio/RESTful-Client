@@ -1,0 +1,77 @@
+:root {
+  --bs-font-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+  --bs-border-radius: 6px !important;
+  --bs-border-radius-sm: 4px !important;
+  --bs-border-radius-lg: 8px !important;
+  --primary-soft: rgba(13, 110, 253, 0.08);
+}
+
+/* Utility Class สำหรับ Radius แบบเหลี่ยมสวยๆ (Medium) */
+.radius-md {
+  border-radius: 6px !important;
+}
+
+/* Card สไตล์ทันสมัย */
+.modern-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.modern-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Code Block Styling */
+.code-block {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 1rem;
+  max-height: 450px;
+  overflow: auto;
+}
+
+/* Input Focus Styling */
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Preset Item Hover */
+.preset-item {
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+.preset-item:hover {
+  background-color: var(--primary-soft);
+  border-left-color: #0d6efd;
+}
+.preset-item.active {
+  background-color: var(--primary-soft);
+  border-left-color: #0d6efd;
+  font-weight: 600;
+}
